@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>fafe1a1f-d0f2-4476-a4df-bfab2ae6b1fa</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.9" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PoC.SendEmail.API.Application\PoC.SendEmail.API.Application.csproj" />
+    <ProjectReference Include="..\PoC.SendEmail.API.Domain\PoC.SendEmail.API.Domain.csproj" />
+    <ProjectReference Include="..\PoC.SendEmail.API.Infrastructure\PoC.SendEmail.API.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
